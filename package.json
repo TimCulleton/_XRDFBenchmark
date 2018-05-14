@@ -2,9 +2,9 @@
   "name": "xrdfbenchmark",
   "version": "1.0.0",
   "description": "Electron node js app generate highchart spreadsheets",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "electron ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/XeroSkill/_XRDFBenchmark/issues"
   },
-  "homepage": "https://github.com/XeroSkill/_XRDFBenchmark#readme"
+  "homepage": "https://github.com/XeroSkill/_XRDFBenchmark#readme",
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/react": "^16.3.14",
+    "@types/react-redux": "^6.0.0",
+    "@types/redux": "^3.6.0",
+    "react": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
 }

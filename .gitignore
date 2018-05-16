@@ -63,3 +63,6 @@ typings/
 .next
 
 .idea/
+
+# js.map
+*.js.map

@@ -22,14 +22,15 @@
     "@types/react-redux": "^6.0.0",
     "@types/redux": "^3.6.0",
     "highcharts": "^6.1.0",
+    "material-ui": "^0.20.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "requirejs": "^2.3.5"
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "@types/highcharts": "^5.0.22",
+    "@types/material-ui": "^0.20.8",
     "@types/react-dom": "^16.0.5",
     "electron": "^2.0.0"
   }

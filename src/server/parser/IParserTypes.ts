@@ -1,6 +1,6 @@
 
 export interface IWriteBenchmarkData extends IRdfConfigData{
-    data: string;
+    date: string;
     environment: string;
     entitiesCreated: number;
     entityType: string;
@@ -15,10 +15,46 @@ export interface IWriteBenchmarkData extends IRdfConfigData{
     totalTriplesCreated: number;
     startTime: number;
     endTime: number;
-    percentageOfTimeWriting: number;
-    percentageOfTimeValidating: number;
-    percentageOfTimeGettingNumberOfTriples: number;
+    percentageOfTimeWriting: string;
+    percentageOfTimeValidating: string;
+    percentageOfTimeGettingNumberOfTriples: string;
     numberOfTriplesInRdfPriorToWriting: number;
+}
+
+export enum WriteBenchMarkColumn {
+    Date,
+    Environment,
+    EntitiesCreated,
+    EntityType,
+    RDFEntityType,
+    TimeToComplete,
+    TimeToWrite,
+    TimeToCommit,
+    TimeToGetNumTriples,
+    TriplesPerEntity,
+    TriplesPerTotalSecond,
+    TriplesPerWriteSecond,
+    TotalTriplesCreated,
+    StartTime,
+    EndTime,
+    PercentageOfTimeWriting,
+    PercentageOfTimeValidating,
+    PercentageOfTimeGettingNumberOfTriples,
+    NumberOfTriplesInRDFPriorToWriting,
+    Driver,
+    ActiveGraph,
+    User,
+    Role,
+    Tenant,
+    Verbose,
+    ResultFirst,
+    Profiler,
+    Validation,
+    Entailment,
+    Language,
+    TransactionDepth,
+    PushDepth,
+    CWD
 }
 
 interface IRdfConfigData {

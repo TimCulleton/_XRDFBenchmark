@@ -6,9 +6,11 @@ const url = require('url');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win: electron.BrowserWindow;
+// let server: electron.BrowserWindow;
 
 function createWindow() {
     win = new electron.BrowserWindow({width: 800, height: 600});
+    // server = new electron.BrowserWindow({show: false});
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, '../client/index.html'),

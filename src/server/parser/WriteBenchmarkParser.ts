@@ -64,10 +64,19 @@ export async function parseWriteCSVFile(filePath: string): Promise<IWriteBenchma
                 return;
             } else {
 
+                const fileSize = stat.size;
+                let currentSize = 0;
 
-                // let inStream = fs.createReadStream(filePath);
-                // let outStream = new stream;
-                // let lineReader = readline.createInterface(inStream, outStream);
+                let inStream = fs.createReadStream(filePath, {encoding: "utf-8"});
+                let lineReader = readline.createInterface({input: inStream});
+
+                lineReader.on('line', (line: string) => {
+
+                });
+
+                lineReader.on('end', ()=> {
+
+                });
             }
         })
 

@@ -1,11 +1,20 @@
 // ///<amd-module name="DS/GEODataExplorerControls/Redux/GDMTypes"/>
 //
-// import {tItemType} from "../UIData/ObjectTypes";
+// // import {tItemType} from "../UIData/ObjectTypes";
+// import * as TestTypes from "./testTypes";
 //
+// export type tItemType = any;
 //
 // /**
 //  * Created by hq9 on 8/8/2017
 //  */
+//
+// export interface HelixCore {
+//     test: TestTypes.Out,
+//     hax: TestTypes.XX
+//
+//     inlineType: {testx: string, slummin: boolean}
+// }
 //
 // /**
 //  * The 'state' object by which the entire GDM Application works on.

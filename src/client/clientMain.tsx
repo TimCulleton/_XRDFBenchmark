@@ -2,6 +2,10 @@ import * as React from "react"
 import * as ReactDOM from "react-dom";
 import {TodoItem} from "./todoItem";
 
+//
+import * as TSParser from "../server/typescriptParser/typescriptParser";
+import * as ActionEventGenerator from "../server/typescriptParser/actionEventGenerator";
+
 interface ITodo {
     description: string;
     key: number
@@ -76,6 +80,14 @@ export class ClientTest extends React.Component<IMainProps, IMainState> {
 
 ReactDOM.render(React.createElement(ClientTest), document.getElementById("reactRoot"));
 
+//Play around with the TS compiler
+let tsNodes = TSParser.parseTSFile();
+let stateData = TSParser.getStateNode(tsNodes, "IGDMState");
+
+window["ts_nodes"] = tsNodes;
+window["state_data"] = stateData;
+
+window["actionEvents"] = ActionEventGenerator.generateActionEvents(stateData);
 
 // import {cat} from "./todoItem";
 //

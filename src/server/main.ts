@@ -30,7 +30,7 @@ function createWindow() {
         win = null
     });
 
-    parseTSFile();
+    // parseTSFile();
 }
 
 // This method will be called when Electron has finished
